@@ -1,0 +1,17 @@
+# Telegram QR Bot — Python dependencies
+#
+# Install with:  pip install -r requirements.txt
+# Python 3.11+ is required (works on 3.11, 3.12, 3.13 and 3.14).
+
+# python-telegram-bot v22+. v22.4+ fixes the Python 3.14
+# asyncio.get_event_loop() incompatibility that breaks v21.x on 3.14.
+# v22.x is pure Python, no C extensions.
+python-telegram-bot>=22.4,<23
+
+# QR code generation. Uses qrcode's pure-Python PNG factory
+# (qrcode.image.pure.PyPNGImage) so we do NOT need Pillow and avoid any
+# C compilation on Windows / Python 3.14+.
+qrcode==7.4.2
+
+# Optional but recommended: load .env automatically during local dev.
+python-dotenv==1.0.1

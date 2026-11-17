@@ -1,0 +1,93 @@
+# ---- Secrets ----
+# Never commit your real bot token or any .env file.
+.env
+.env.*
+!.env.example
+
+# ---- Secrets stored by editors/tools ----
+*.pem
+*.key
+*.p12
+*.token
+secrets.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Testing / coverage ----
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ---- Type checkers / linters ----
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ---- IDEs / editors ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ---- Project runtime artifacts ----
+*.log
+logs/
+*.png
+*.jpg
+*.jpeg
+*.gif
+# Keep generated sample QRs only if you explicitly put them in /docs.
+!docs/**/*.png
+!docs/**/*.jpg
+
+# ---- OS junk ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Docker (local) ----
+docker-compose.override.yml
